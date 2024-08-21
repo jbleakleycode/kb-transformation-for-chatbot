@@ -1,0 +1,110 @@
+content: Neo4j:Graph Visualisation
+Luis Salvador
+Pre-Sales Consultant, UK & Ireland
+luis@neo4j.com
+
+Visualisation needs
+
+Visualizing Graphs in Neo4j
+Neo4j Bloom
+Out-of-the-box from Neo4j
+Exclusively for Neo4j graphs
+Focused on ad-hoc graph exploration needs
+“Search first” exploration paradigm
+For data analysts, data scientists and developers
+
+Visualization Toolkits
+3rd party e.g. Ogma, Keylines, vis.js, d3.js, sigma.js, yFiles
+Custom app development or visualization embedding needs
+Some are vendor supported
+Some have Neo4j data hooks, others require development
+Offer robust APIs for flexible control over the app experience
+For developers who build apps
+BI Tools
+3rd party e.g. Tableau, Power BI, Qlik
+Dashboard and report creation combining various data sources and many visualization types
+Not optimized for graph data - need a special Neo4j connector
+For data analysts and business users
+
+Graph Visualization Apps
+3rd party e.g. Linkurious, Kineviz, Graphileon
+Purpose-built applications for specific domains and graph visualization needs
+Support multiple graph models and sources
+Customization and integration capable
+For data analysts, data scientists and business users
+Little technical expertise
+Most technically involved
+Smaller user scale
+Larger user scale
+Self-guided, low curation
+Highly guided and curated
+3
+
+Perspective
+Search
+Visualize
+Explore
+Inspect
+Edit
+Explore & Collaborate with Neo4j Bloom
+Explore Graphs Visually
+Prototype Concepts Faster
+Collaborate Across Teams
+Business views relevant to analysts for ad-hoc visual graph exploration
+Codeless “Search first” experience
+GPU-accelerated graph views with 1000s of nodes and relationships
+Out-of-the-box with Neo4j Desktop or deploy as add-on to the Neo4j Server
+Use to quickly prototype projects and collaborate between developers and business stakeholders
+
+
+Neo4j Bloom’s Intuitive User Interface
+Search with type-ahead suggestions
+
+Flexible Color, Size and Icon schemes
+
+Visualize, Explore and Discover
+
+Pan, Zoom and Select
+
+Property Browser and editor
+
+What’s New in Bloom 1.2
+Flexible colors and sizes
+Style using properties
+Expand by relationship or neighbor type
+Case insensitive search
+Specify parameter types
+Export csv data
+
+0:01 - In Bloom, you begin by searching on graph patterns.
+0:14 - You can see individual nodes and their relationships.
+0:25 - You can search using properties.
+0:33 - There are many ways of styling the results, here are a couple of examples of using the presence of a label to color nodes differently.
+0:57 - You can see how things are connected by exploring paths. Here we are finding the shortest path between 2 nodes.
+1:09 - But you can also expand paths from a node based on relationship types or its neighbors.
+1:20 - When you find insights, you can export the data so it can be used in another place or shared with other people.
+This was a really short and fast video. I recommend you try out the latest Bloom 1.2 has to offer.
+
+
+
+Linkurious demo
+
+Some sort of comparative between solutions?
+features  specific to certain products/versions?
+Geolocation
+Time travel slider
+
+
+Linkurious Geolocation
+
+Linkurious customized with OGMA
+
+OGMA custom projection
+
+Linkurious time-filtering
+Filter out irrelevant periods,
+Get a better understanding of a sequence of events
+All while getting extra information about how data is distributed over time.
+
+
+Thank you
