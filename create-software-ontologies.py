@@ -1,3 +1,4 @@
+# export OPENAI_API_KEY="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"
 import csv
 from openai import OpenAI
 from neo4j import GraphDatabase, exceptions
@@ -8,7 +9,7 @@ import time
 client = OpenAI()
 
 def unit_of_work_for_getting_articles(tx):
-    result = tx.run("MATCH(a:Article)-[]-(c:Content) WHERE a.operationsCompleted IS NULL RETURN a.name as name, c.content as content")
+    result = tx.run("MATCH(a:Article)-[]-(c:Content) WHERE a.softwareCompleted IS NULL RETURN a.name as name, c.content as content")
     return result.values("name", "content")
 
 # Function to query Neo4j and process results
@@ -17,9 +18,9 @@ def main(driver, csv_file_path):
         result = session.execute_read(unit_of_work_for_getting_articles)
         
         for record in result:
-            print(record[0])
+            print("Starting entity resolution for "+record[0])
             attempt = 0
-            max_attempts = 5
+            max_attempts = 100
             backoff_time = 5
             while attempt < max_attempts:
                 try:
@@ -37,8 +38,10 @@ def main(driver, csv_file_path):
                 raise e
             
 def unit_of_work_for_setting_article_ontology_as_complete(tx, articleName):
-    tx.run("""MATCH (a:Article {name: $articleName})
-            SET a.operationsCompleted = true""", articleName=articleName)
+    tx.run("""
+            MATCH (a:Article {name: $articleName})
+            SET a.softwareCompleted = true
+            """, articleName=articleName)
       
 def openai_call(prompt):
     response = client.chat.completions.create(
@@ -59,27 +62,25 @@ def function_with_prompt(driver, documentName, csv_file_path, document):
             reader = csv.reader(file)
             header = next(reader)
             for row in reader:
-                if row[0] == "Operation":
-                    user_prompt = f"In summary of what the document: '{result}' with document title: '{documentName}' is about, could the operation label '{row[2]}' potentially directly apply to the document where the definition of the label is '{row[3]}'?"
-                    response = openai_call(user_prompt)
-                    # print(f"For this document, should {row[2]} be one of the operations ontologies? {result}")
-                    if response == "yes":
-                        print(f"Adding {row[2]} to the operations ontology of the document '{documentName}'")
-                        db_write_ontologies(driver, documentName, row[2])
+                user_prompt = f"In summary of what the document: '{result}' with document title: '{documentName}' is about, could the software label '{row[2]}' potentially directly apply to the document where the definition of the label is '{row[5]}'?. You can only answer with 'yes' pr 'no'. Response must be lowercase and should not include comment or punctuation."
+                response = openai_call(user_prompt)
+                if response == "yes":
+                    print(f"Adding {row[2]} to the software ontology of '{documentName}'")
+                    db_write_ontologies(driver, documentName, row[2])
                     
     with driver.session() as session:
         session.execute_write(unit_of_work_for_setting_article_ontology_as_complete, documentName)
     print('Entity resolution completed for document:', documentName)
         
-def unit_of_work_write_ontologies(tx, articleName, operationName):
+def unit_of_work_write_ontologies(tx, articleName, softwareName):
     tx.run("""MERGE (a:Article {name: $articleName})
-                                MERGE (o:Operation {name: $operationName})
-                                MERGE (a)-[r:HAS_OPERATION]->(o)"""
-                                , articleName=articleName, operationName=operationName
+                                MERGE (sw:Software {name: $softwareName})
+                                MERGE (a)-[r:REFERS_TO_SOFTWARE]->(sw)"""
+                                , articleName=articleName, softwareName=softwareName
                                 )
-def db_write_ontologies(driver, articleName, operationName):
+def db_write_ontologies(driver, articleName, softwareName):
     with driver.session() as session:
-        session.execute_write(unit_of_work_write_ontologies, articleName, operationName)
+        session.execute_write(unit_of_work_write_ontologies, articleName, softwareName)
     
 
 if __name__ == "__main__":
@@ -88,6 +89,6 @@ if __name__ == "__main__":
     user = "neo4j"
     password = "password"
     driver = GraphDatabase.driver(uri, auth=(user, password), max_connection_lifetime=200)
-    csv_file_path = "/Users/c02f41k7md6r/Documents/team_chatbot/graph-construction/general_taxonomies.csv"
+    csv_file_path = "/Users/c02f41k7md6r/Documents/team_chatbot/graph-construction/software-taxonomies.csv"
     main(driver, csv_file_path)
     driver.close()

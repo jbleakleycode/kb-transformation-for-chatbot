@@ -1,0 +1,92 @@
+operations_category_2,operations_category_1,software_component,software_category_1,software_category_2,ai_generated_description
+null,Development,.Net,Application Framework,Drivers & Connectors,A software development framework used primarily for building Windows applications and web applications with a focus on object-oriented programming.
+null,Application Infrastructure,Amazon Web Services (AWS),Infrastructure,Cloud Services,"A cloud computing platform with various services for data storage, computing power, database management, and more."
+null,Data Orchestration,Apache Airflow,3rd Party Application,null,"A tool for creating, scheduling and monitoring workflows, improving data processing and providing visibility in graph form."
+null,"Extract, Transform, Load (ETL)",Apache Hop,Application Framework,null,"An open-source ETL tool with support for graph technology, used for data integration, processing, and automation in software development."
+null,Querying,APOC Core,Cypher Procedures & Functions,null,"APOC Core enhances graph database development and query performance with advanced data extraction, transformation, and loading capabilities."
+null,Querying,APOC Extended,Neo4j Labs,null,APOC Extended provides additional graph database functionalities and enhanced APIs to optimize graph technology for software development.
+null,Data Modelling,arrows.app,Neo4j Labs,Neo4j Application,"A graph visualization tool for software developers, allowing for easy exploration and understanding of code structure."
+null,Development,Aura API,Aura,Interface,A graph data platform for software development that offers a wide range of features and functionalities.
+null,Database Managment,Aura Browser,Interface,Aura,A web browsing tool designed for efficient and intuitive user experience while leveraging the power of graph technology.
+null,Database Managment,Aura CLI,Neo4j Labs,Aura,Command-line interface for a graph platform that helps developers query and analyze data with ease
+null,Database Managment,Aura Console,Aura,Interface,"A tool for managing a graph database and running graph queries in real-time, with a user-friendly interface."
+,Data Orchestration,AWS Glue,3rd Party Application,Cloud Services,A software that enables data transformation and integration in the cloud-based environment for business intelligence and machine learning applications.
+Business Intelligence (BI),Development,BI Connector,Drivers & Connectors,null,Seamlessly integrate your business intelligence tools with graph databases for efficient data analysis and visualization.
+null,"Graph Discovery, Visualisation and Analysis",Bloom,Plugins,Interface,"Graph database management system with user-friendly interface, developed by Neo4j for beginner and advanced graph database users."
+null,Database Managment,Browser,Interface,null,A program that allows users to view and interact with content on the internet
+null,CI/CD/Devops,circleci,Infrastructure,null,"Automates build, test, and deploy processes for quick and reliable software delivery using continuous integration and delivery."
+null,Database Managment,Command Line,Interface,null,A text-based interface for typing commands to execute specific tasks or operations within a software system.
+null,Database Managment,Cypher Shell,Interface,null,"A command-line interface for querying graph databases, with features for visualizing query results and managing database connections."
+null,Data Modelling,Cypher Workbench,Neo4j Labs,null,A tool for visualizing and querying graph databases using the Cypher query language and supporting multiple graph database systems.
+null,"Graph Discovery, Visualisation and Analysis",cytoscape,3rd Party Application,null,"A graph analysis tool that provides visual representations of data for better understanding, analysis, and interpretation."
+"Graph Discovery, Visualisation and Analysis",Development,d3.js,3rd Party Library,null,A powerful tool used for creating interactive and dynamic data visualizations on the web using JavaScript and HTML.
+null,"Extract, Transform, Load (ETL)",Data Importer,Interface,null,A tool that helps to bring external data into a graph database or software system
+null,Database Managment,Desktop,Interface,null,A graphical user interface for accessing and organizing files and applications on a personal computer.
+null,CI/CD/Devops,Docker,Infrastructure,null,An efficient way to package and deploy applications with all of their dependencies in a containerized environment.
+null,"Extract, Transform, Load (ETL)",ETL Tool,Neo4j Labs,Neo4j Application,"An efficient solution to extract, transform, and load data from various sources into a target system."
+null,"GenAI, LLMs and Vector Embeddings",GenAI Ecosystem,Neo4j Labs,null,"Automated software platform that accelerates graph database development, using machine learning algorithms and natural language processing."
+Monitoring,CI/CD/Devops,GitLab,Infrastructure,null,"An all-in-one integrated platform for DevOps with version control, continuous integration, and deployment tools."
+null,Development,Go,Programming Language,Drivers & Connectors,"A statically typed, compiled language designed for concurrent and scalable systems, with a syntax inspired by C."
+null,Data Orchestration,Google Cloud DataFlow,3rd Party Library,Cloud Services,A cloud-based solution for processing big data using a unified programming model with expressive transformations and simple deployment options.
+,Application Infrastructure,Google Cloud Platform,Infrastructure,Cloud Services,"A cloud computing service for building, testing and deploying applications, using a network of servers managed by Google."
+,CI/CD/Devops,Google Kubernetes Engine,Infrastructure,Cloud Services,"Kubernetes container orchestration platform for automating deployment, scaling and management of containerized applications."
+null,Diagramming,Gra.fo,3rd Party Application,null,A graph technology that simplifies complex data modeling and visualization for software developers and other professionals.
+null,Data Science,Graph Data Science,Plugins,Neo4jLibrary,A neo4j software which analyses and visualises complex relationships within data to gain insights and make informed decisions.
+"Graph Discovery, Visualisation and Analysis",Database Managment,Graphileon,3rd Party Application,null,Graphileon empowers software developers by providing a customizable graph-based environment for building data-driven applications.
+"Graph Discovery, Visualisation and Analysis","Graph Discovery, Visualisation and Analysis",Graphlytic,3rd Party Application,null,Graphlytic is a software that helps individuals and teams visualize and analyze intricate data sets using graph technology.
+null,Development,GraphQL,Neo4j Library,3rd Party Library,A query language for APIs that enables efficient and flexible communication between the client and the server.
+null,Diagramming,Hackolade,3rd Party Application,null,Graph data modeling tool that simplifies creating and maintaining visual schema designs for NoSQL databases and GraphQL APIs.
+null,Development,HTTP API,Interface,null,"A protocol used for communication between different systems over the internet, allowing transfer of data and enabling interaction with web services."
+"GenAI, LLMs and Vector Embeddings",Visualisation,Hume,3rd Party Application,null,Hume is a software that utilizes graph technology for software development purposes
+null,Development,IntelliJ,Integrated Development Environment (IDE),"Graph Discovery, Visualisation and Analysis",Java integrated development environment with advanced code analysis and navigation capabilities for efficient and productive software development.
+null,Development,Java,Programming Language,Drivers & Connectors,A popular object-oriented language used in the development of graph technology and software applications.
+null,Development,JavaScript,Programming Language,Drivers & Connectors,"A programming language widely used for web development, object-oriented, and supports event-driven, functional, and imperative programming paradigms."
+null,CI/CD/Devops,Jenkins,Infrastructure,null,A tool for continuous integration and delivery popular among software developers and used to automate software builds and deployments.
+"Extract, Transform, Load (ETL)",Development,Kafka Connector,Drivers & Connectors,null,Software integration tool for real-time data streaming and processing in distributed systems using Apache Kafka architecture.
+null,"Extract, Transform, Load (ETL)",Kettle/Pentaho,3rd Party Application,null,"A powerful tool for data integration, ETL, and analytics with a focus on graph technology and software development."
+null,"Graph Discovery, Visualisation and Analysis",keylines,3rd Party Library,null,A software that provides data-driven solutions to graph-based problems for businesses and organizations.
+null,"Extract, Transform, Load (ETL)",KNIME,3rd Party Application,null,"An open-source platform used for data analytics, machine learning, and integration with other tools for efficient workflows in data processing."
+null,CI/CD/Devops,Kubernetes,Infrastructure Software,null,"A container management system that automates deployment, scaling, and management of containerized applications."
+Monitoring,"Graph Discovery, Visualisation and Analysis",Linkurious,3rd Party Application,null,"A graph visualization tool designed for developers to analyze complex data from different sources, offering powerful insights."
+null,Development,Linux,Computing Platform,null,"Open-source operating system with command-line interface, often used for servers and development environments in graph technology and software development fields."
+CI/CD/Devops,Data Model Versioning,Liquibase,3rd Party Application,null,An open-source tool that enables version control of your database schema and automates database change management.
+null,Application Infrastructure,Microsoft Azure,Infrastructure,Cloud Services,"A cloud-based platform for deploying, managing, and scaling applications, databases, and services"
+null,"Extract, Transform, Load (ETL)",MS SS IS,3rd Party Application,null,A data integration and transformation tool used to move and transform data across various sources and destinations.
+null,Development,Needle Start Kit,Neo4j Labs,UI Component Environment,A graph technology software package designed to simplify the process of starting a new software development project.
+CI/CD/Devops,Data Model Versioning,Neo4j plugin for Liquibase,Neo4j Labs,Plugins,A software plugin that allows database schema changes to be tracked and versioned in conjunction with Neo4j graph databases.
+null,Data Model Versioning,Neo4j-Migrations,Neo4j Labs,null,A software tool that allows developers using Neo4j graph technology to easily manage database schema changes.
+null,Visualisation,Neodash,Neo4j Labs,Neo4j Application,A software tool that provides real-time monitoring and visualization of graph data for better decision-making.
+null,Visualisation,neomodel,Neo4j Labs,null,Python library for interacting with Neo4j graph databases. Ideal for building Django applications with robust data models.
+null,Data Modelling,Neosemantics,Neo4j Labs,null,"A software that enables graph integration and manipulation, with support for RDF and property graphs."
+Data Science,"Graph Discovery, Visualisation and Analysis",NetworkX,3rd Party Library,null,"A Python library for creating, manipulating, and studying complex networks, such as social networks, transport networks, and biological networks."
+null,Data Science,numpy,3rd Party Library,null,"A widely used Python library for numerical computations and data analysis, popular among data scientists and developers."
+Database Object Mapping,Development,Object Graph Mapping Library,Neo4j Library,null,"A library that assists in the mapping of object-oriented domain models to a database, simplifying the database integration process."
+null,"Graph Discovery, Visualisation and Analysis",ogma,3rd Party Library,null,"A powerful, scalable, and flexible graph visualization engine with interactive and intuitive user interface for analyzing and presenting complex data."
+null,"GenAI, LLMs and Vector Embeddings",OpenAI,AI/LLM Provider,null,Cutting-edge AI research institute known for advancing the boundaries of machine learning and natural language processing.
+null,Database Managment,Ops Manager,Neo4j Application,null,"A tool that monitors, troubleshoots, and manages deployment of various graph and software development applications."
+null,Development,PHP,Programming Language,Drivers & Connectors,"An open-source scripting language extensively used for web development, server-side scripting, and general-purpose programming."
+null,Business Intelligence (BI),PowerBI,3rd Party Application,null,"A tool for visualizing and analyzing business data using interactive dashboards, customizable reports, and real-time insights."
+"Graph Discovery, Visualisation and Analysis",Development,protovis,3rd Party Library,null,A visualization tool that utilizes SVG and JavaScript to create dynamic visualizations for web applications.
+null,Development,Python,Programming Language,Drivers & Connectors,"A popular programming language used in data science, machine learning, and web development with a simple syntax."
+null,Visualisation,Qlik,3rd Party Application,null,Data analytics and visualization software for enterprise-level businesses that utilizes modern graph technology and data integration capabilities.
+null,Data Integration and Interoperability,Rdflib-Neo4j,Neo4j Labs,null,"A software that combines graph database Neo4j and RDFLib, a Python library for working with Resource Description Framework (RDF) data."
+null,"Graph Discovery, Visualisation and Analysis",SemSpect,3rd Party Application,null,"A tool for analyzing, querying, and visualizing large-scale, complex, interconnected data in the context of graph technology."
+"Extract, Transform, Load (ETL)",Development,Spark Connector,Drivers & Connectors,null,"Integrate Apache Spark with graph databases for scalable, real-time data processing and analysis"
+null,Development,Spring,Application Framework,null,Powerful open-source framework for building enterprise-ready Java applications with extensive support for graph technology.
+null,Development,Spring Data Neo4j,Neo4j Library,3rd Party Library,A graph software mapping tool for Java developers using Neo4j graph database that simplifies data access and mapping.
+null,Development,StoryBook,UI Component Environment,null,"A tool for organizing and documenting UI components and patterns, useful for developing scalable and maintainable software."
+null,Business Intelligence (BI),Tableau,3rd Party Application,null,"A data visualization software catering to business intelligence that offers solutions for data discovery, sharing and collaboration."
+Data Science,"Graph Discovery, Visualisation and Analysis",Tibco Spotfire,3rd Party Application,null,A powerful data visualization and business intelligence tool used for analyzing and interpreting complex information.
+null,Data Model Versioning,Versioner Core,Community-made Component,null,Versioner Core provides efficient management of graph data for software developers and organizations using graph technology.
+null,"GenAI, LLMs and Vector Embeddings",Vertex AI,AI/LLM Provider,null,Advanced software that leverages graph technology to simplify and streamline machine learning workflows for developers and enterprises.
+null,"Graph Discovery, Visualisation and Analysis",vis.js,3rd Party Library,null,"A JavaScript visualization library with customizable options and support for network, timeline, and graph visualization."
+null,Development,VsCode,Integrated Development Environment (IDE),Drivers & Connectors,"A lightweight, open-source code editor designed for editing and debugging modern web and cloud applications in several programming languages."
+null,Development,Warehouse Connector,Drivers & Connectors,null,Integrate graph technology into your software development workflow seamlessly
+null,Development,Windows,Computing Platform,null,"The most popular operating system for personal computers, known for its user-friendly interface and compatibility with a wide range of software."
+null,Database Managment,Workspace,Neo4j Surface,Aura,A digital environment for organizing and managing project-related resources and information in graph technology and software development.
+null,Diagramming,Yed,3rd Party Application,null,"A visual thinking tool for creating, editing, and sharing diagrams, flowcharts, and network layouts with support for graph technologies."
+null,"Graph Discovery, Visualisation and Analysis",yfiles,3rd Party Library,null,"A graph technology and software development tool for visualizing, editing, and analyzing diagrams and complex networks."
+,,,,,
+,,,,,
+,,,,,
+,,,,null,
