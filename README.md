@@ -1,4 +1,3 @@
-# llm-ontology-resolution
-LLM identifies which of the given ontologies match the document and writes relationships in neo4j
+# llm-ontology-resolution, Vector Embedding Creation and tokenSplitting
 
 Ontology files can be found at (Neo4j internal only): https://docs.google.com/spreadsheets/d/1j1tX0kVX_NNre84wJVLjadffyY7WfaJF3GB3pgsGdc0/edit?gid=2063030370#gid=2063030370
