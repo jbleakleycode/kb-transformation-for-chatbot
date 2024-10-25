@@ -1,4 +1,3 @@
-# export OPENAI_API_KEY="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"
 from neo4j import GraphDatabase, exceptions
 from openai import OpenAI
 import time
